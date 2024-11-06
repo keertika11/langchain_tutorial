@@ -1,7 +1,7 @@
 .env
 
-/langchain
+langchain/
 
 constants.py
 
- __pycache__/
+__pycache__/
