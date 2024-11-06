@@ -1,22 +1,40 @@
-# # langchain_tutorial Scripts
+# LangChain Tutorial Scripts
 
-## Tutorial From <https://youtu.be/_FpT1cwcSLg?feature=shared>
+This repository contains scripts following tutorials on LangChain. The tutorials can be found on YouTube:
 
-conda create -n lang_chain python=3.9
+- [LangChain Basics Tutorial](https://youtu.be/_FpT1cwcSLg?feature=shared)
+- [Prompt Engineering with LangChain](https://youtu.be/t2bSApmPzU4?feature=shared)
 
-conda activate lang_chain
+## Environment Setup
 
-pip install -r requirements.txt
+Follow these steps to set up the environment:
 
-1. langchain_openai_example1.py : Using Langchain and openai_key, showing the demo on streamlit.
+1. **Create the Conda environment:**
 
-2. single_prompt_template.py : uses LLMChain and single prompt template.
+   ```bash
+   conda create -n lang_chain python=3.9
+2. **Activate the environment:**
+  
+   ```bash
+   conda activate lang_chain
+3. **Install dependencies:**
 
-3. multiple_prompt_template.py : combines multiple prompts, output for one prompt template is given as input or second prompt template to the llm using PromptTemplate and LLMChain
+   ```bash
+   pip install -r requirements.txt
 
-4. langchain_memory_conversation_openai.py : saving the conversation in the memory 
+## Script Descriptions
 
+1. **langchain_openai_example1.py**
+**Description**: Uses LangChain and openai_key to demonstrate a LangChain model on Streamlit.
 
-### https://youtu.be/t2bSApmPzU4?feature=shared 
+2. **single_prompt_template.py**
+   **Description**: Demonstrates how to use LLMChain with a single prompt template.
 
-5. prompt_eng_langchain.py : 
+3. **multiple_prompt_template.py**
+   **Description**:  Combines multiple prompts by taking the output of one prompt template as input for a second prompt template, using PromptTemplate and LLMChain.
+
+4. **langchain_memory_conversation_openai.py**
+   **Description**: Saves conversation history to memory for continuous conversation
+
+5. **prompt_eng_langchain.py**
+  **Description**: Covers prompt engineering techniques using LangChain.
